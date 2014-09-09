@@ -110,7 +110,7 @@ footer {
 
 footer p {
     margin: 0;
-    padding: 50px 0;
+    padding: 35px 0;
      color:#777;
 }
 
@@ -119,7 +119,8 @@ footer p {
 @media screen and (min-width:768px) {
     
     .container .row{
-        margin-top: 161px
+        margin-top: 101px;
+            margin-bottom:86px;
     }
     .brand {
         display: none;
@@ -178,7 +179,8 @@ footer p {
 position: fixed;
 width: 100%;
 z-index: 1000;
-border-bottom: 90px #e1ac39 solid;
+        border-bottom: solid 1px #777;
+        
     }
 
     .nav>li>a {
@@ -249,7 +251,7 @@ background: #fff;
 }
 
 html{
-    background-color: #fff;
+    background-color: #e1ac39;
 }
 
 .half{
@@ -261,3 +263,21 @@ margin: 10px;
 @media screen and (min-width: 768px){.brand-large-screen{
     display:block;
     }}
+
+.widSSP {
+width: 245px !important;
+margin: 0 auto !important;
+}
+
+.footer-container{
+     position: fixed;
+bottom: 0;
+width: 100%;
+background: #fff;
+    height:91px;
+    border-top:1px solid #777;
+}
+
+.footer-container .row{
+ margin-top:0;   
+}
