@@ -69,6 +69,12 @@ hr {
     text-transform: capitalize;
 }
 
+.dropdown-menu{
+ text-transform: capitalize;
+    font-size:18px;
+    border:none;
+}
+
 .brand-before {
     margin: 15px 0;
 }
@@ -76,6 +82,10 @@ hr {
 .brand-name {
     margin: 0;
     font-size: 4em;
+}
+
+.dropdown.open{
+ height:55px;   
 }
 
 .tagline-divider {
@@ -90,7 +100,6 @@ hr {
     padding:10px;
     background: #fff;
     /*border:solid 1px black;*/
-    height:716px;
 }
 
 .intro-text {
