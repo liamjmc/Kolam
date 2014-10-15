@@ -14,7 +14,7 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
-color: #777;
+color: #fff;
 text-transform: capitalize;
 font-size: 20px;
 }
@@ -139,14 +139,14 @@ header.carousel .fill {
 }
 
 footer {
-    background: #fff;
+    background: #138808;
    
 }
 
 footer p {
     margin: 0;
     padding: 17px 0;
-     color:#777;
+     color:#fff;
     font-weight:bold;
 }
 
@@ -209,9 +209,8 @@ footer p {
 
     .navbar-default {
         border: none;
-        background: #fff;
         /*border:solid 1px black;*/
-        background: #fff;
+        background: #e1ac39;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -220,6 +219,7 @@ footer p {
     .nav>li>a {
         
         padding-left: 12px;
+color:#fff;
     }
 
     .navbar-nav>li>a {
@@ -246,7 +246,7 @@ footer p {
 
 /*CUSTOM CSS*/
 body{
-    background:#e1ac39 !important;
+    background:#fff !important;
 }
 
 .kolam-art-image{
@@ -270,9 +270,9 @@ body{
 }
 
 nav.navbar.navbar-default {
-background: #fff;
+background: #777;
 height: 136px;
-border-bottom: #e1ac39 solid 81px;
+border-bottom: #fff solid 81px;
     margin-bottom: 0;
 }
 
@@ -283,7 +283,7 @@ border-bottom: #e1ac39 solid 81px;
 }
 
 html{
-    background-color: #e1ac39;
+    background-color: #fff;
 }
 
 .half{
@@ -305,9 +305,10 @@ margin: 0 auto !important;
      position: fixed;
 bottom: 0;
 width: 100%;
-background: #fff;
+background: #777;
     height: 136px;
-border-top: 81px solid #e1ac39;
+border-top: 81px solid #fff;
+color:#fff;
 }
 
 .footer-container .row{
