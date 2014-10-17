@@ -265,6 +265,21 @@ color:#fff;
     }
 }
 
+.phone-icon{
+ float: right;
+margin: 12px;
+/* height: 44px; */
+font-size: 20px;
+color: #fff;
+border: #fff solid 1px;
+padding: 6px 10px;
+border-radius: 3px;   
+}
+
+.phone-icon:hover{
+ cursor:pointer;   
+    background-color: #ddd;
+}
 
 /*CUSTOM CSS*/
 body{
