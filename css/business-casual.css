@@ -265,6 +265,13 @@ color:#fff;
     }
 }
 
+@media (min-width: 768px)
+{
+.navbar-collapse.collapse.visible{
+display: none!important;
+}
+}
+
 .phone-icon{
  float: right;
 margin: 12px;
