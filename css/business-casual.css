@@ -205,8 +205,8 @@ div[class$='socialButtonBubbles']{
 @media screen and (min-width:768px) {
     
     .container .row{
-        margin-top: 130px;
-            margin-bottom:130px;
+        margin-top: 61px;
+            margin-bottom:61px;
     }
     .brand {
         display: none;
@@ -358,8 +358,7 @@ color: #fff;
 
 nav.navbar.navbar-default {
 background: #777;
-height: 142px;
-border-bottom: #fff solid 81px;
+height: 61px;
     margin-bottom: 0;
 }
 
@@ -393,10 +392,9 @@ margin: 0 auto !important;
 bottom: 0;
 width: 100%;
 background: #777;
-    height: 136px;
-border-top: 81px solid #fff;
+    height: 61px;
 color:#fff;
-    padding-top:5px;
+    padding-top:8px;
 }
 
 .footer-container .row{
