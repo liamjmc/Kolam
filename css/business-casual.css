@@ -111,7 +111,7 @@ float:right;
 }
 
 header.carousel {
-    height: 500px;
+    height: 100%;
     margin-bottom:30px;
 }
 
@@ -229,6 +229,7 @@ div[class$='socialButtonBubbles']{
 
 .container{
  width:100%;
+    
     padding-left: 0;
     padding-right:0;
 }
@@ -398,6 +399,12 @@ height: 61px;
 box-shadow: 0px 0px 30px 0px #999999;
 }
 
+.col-about{
+ width:60%;
+    margin-left:20%;
+    margin-left:20%;
+}
+
 .dir-input{
     width:100%;
     margin-bottom:10px;
@@ -424,9 +431,8 @@ margin: 0 auto !important;
 }
 
 .footer-container{
-     position: fixed;
-bottom: 0;
 width: 100%;
+    font-weight:bold;
     height: 61px;
 color:#777;
     padding-top:8px;
@@ -437,7 +443,8 @@ box-shadow: 0px 0px 30px 5px #999999;
 }
 
 .footer-container .row{
- margin-top:0;   
+ margin-top:0;  
+    margin-bottom:0;
 }
 
 .contact-margin{
