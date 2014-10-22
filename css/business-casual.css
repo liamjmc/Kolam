@@ -14,7 +14,7 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
-color: #fff;
+color: #777;
 text-transform: capitalize;
 font-size: 20px;
 }
@@ -64,21 +64,30 @@ background-color: #fff;
 }
 
 .navbar-default .navbar-collapse{
- background: #777;   
+ background-color: #f4f4f4;
+-moz-box-shadow: 0px 0px 30px 0px #999999;
+-webkit-box-shadow: 0px 0px 30px 0px #999999;
+box-shadow: 0px 0px 30px 0px #999999;
 }
 
 .dropdown-menu>li>a{
- color:#fff;   
+ color:#777;   
 }
 
 .navbar-default .navbar-brand {
-color: #fff;
+color: #777;
+}
+
+.navbar-nav>li.right-list-element{
+float:right;
 }
 
 .navbar-nav {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 3px;
+    margin:0;
+    width:100%;
 }
 
 .img-full {
@@ -102,7 +111,7 @@ color: #fff;
 }
 
 header.carousel {
-    height: 300px;
+    height: 500px;
     margin-bottom:30px;
 }
 
@@ -140,12 +149,28 @@ z-index: 1000;
     border-color: #999999;
 }
 
+.row{
+ width:100%;   
+    margin-left:0;
+    margin-right:0;
+}
+
+html{
+    height:100%;
+}
+body{
+    height:100%;
+}
+
 .box {
     /*margin-bottom: 20px;*/
     /*padding: 30px 15px;*/
-    padding:10px;
     background: #fff;
     /*border:solid 1px black;*/
+}
+
+.col-lg-12{
+ padding:0;   
 }
 
 .intro-text {
@@ -200,6 +225,12 @@ div[class$='socialButtonBubbles']{
 
 #footer-contact-details{
  margin-top:5px;   
+}
+
+.container{
+ width:100%;
+    padding-left: 0;
+    padding-right:0;
 }
 
 @media screen and (min-width:768px) {
@@ -345,6 +376,8 @@ body{
     line-height: 20px;  
     font-weight: bolder;
     padding-top: 21px;
+    float:left !important;
+    position:static !important;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
@@ -357,9 +390,12 @@ color: #fff;
 }
 
 nav.navbar.navbar-default {
-background: #777;
 height: 61px;
     margin-bottom: 0;
+    background-color: #f4f4f4;
+-moz-box-shadow: 0px 0px 30px 0px #999999;
+-webkit-box-shadow: 0px 0px 30px 0px #999999;
+box-shadow: 0px 0px 30px 0px #999999;
 }
 
 .dir-input{
@@ -391,10 +427,13 @@ margin: 0 auto !important;
      position: fixed;
 bottom: 0;
 width: 100%;
-background: #777;
     height: 61px;
-color:#fff;
+color:#777;
     padding-top:8px;
+    background-color: #f4f4f4;
+--moz-box-shadow: 0px 0px 30px 5px #999999;
+-webkit-box-shadow: 0px 0px 30px 5px #999999;
+box-shadow: 0px 0px 30px 5px #999999;
 }
 
 .footer-container .row{
