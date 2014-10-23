@@ -9,15 +9,28 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <script language="javascript" type="text/javascript">
+        
 		function scrollToPos(x) {
             var docHeight = $(document).height();
             var winHeight = $(window).height();
             var result = winHeight * x;
 			window.scrollTo(0,result);
 		}
+        
+         
   </script>
+    <!--$(document).scroll(function(){
+            var pos = $(this).scrollTop();
+            var winHeight = $(window).height();
+            if (pos >= winHeight && pos <= 2 * winHeight)
+            {
+                debugger;
+             $(".kolam-link").addClass("active-link");   
+            }
+         }-->
+    
     <title>Kolam. South Indian food in Tooting.</title>
-
+    
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -65,15 +78,15 @@
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a onclick="scrollToPos(1)" id="brand-large-screen"  class="pull-right hidden-xs">KOLAM</a>
+                        <a onclick="scrollToPos(1)" id="brand-large-screen"  class="pull-right hidden-xs kolam-link">KOLAM</a>
                     </li>
-                    <li class="right-list-element">
+                    <li class="right-list-element map-link">
                         <a onclick="scrollToPos(4)" >Map</a>
                     </li>
-                    <li class="right-list-element">
+                    <li class="right-list-element contact-link">
                         <a onclick="scrollToPos(3)" >Contact</a>
                     </li>
-                    <li class="right-list-element">
+                    <li class="right-list-element menu-link">
                         <a onclick="scrollToPos(2)" >Menu</a>
                     </li>
                     
@@ -120,24 +133,24 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('foodtwo.jpg');"></div>
+                <div class="fill" style="background-image:url('food.jpg');"></div>
                 
                 <!--<div class="carousel-caption">
                     <h2>Caption 1</h2>
                 </div>-->
             </div>
-            <div class="item">
+            <!--<div class="item">
                 <div class="fill" style="background-image:url('foodone.jpg');"></div>
                 <!--<div class="carousel-caption">
                     <h2>Caption 2</h2>
-                </div>-->
+                </div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('foodthree.jpg');"></div>
                 <!--<div class="carousel-caption">
                     <h2>Caption 3</h2>
-                </div>-->
-            </div>
+                </div>
+            </div>-->
         </div>
 
         <!-- Controls -->
