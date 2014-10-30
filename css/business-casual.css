@@ -307,6 +307,25 @@ div[class$='socialButtonBubbles']{
  background-color:transparent !important;   
 }
 
+
+@media screen and (max-width:768px),  {
+    
+ .col-about{
+  width:94% !important;
+     margin-left:3% !important;
+ }
+    
+}
+
+@media screen and (max-width:1500px) {
+    
+     .col-about{
+  width:84% !important;
+     margin-left:8% !important;
+ }
+    
+}
+
 @media screen and (min-width:768px) {
     
     .container .row{
