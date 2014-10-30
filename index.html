@@ -17,7 +17,9 @@
 			window.scrollTo(0,result);
 		}
         
-         
+$(".navbar-nav a").click(function() {
+    $(this).closest(".dropdown-menu").prev().dropdown("toggle");
+});
   </script>
     <!--$(document).scroll(function(){
             var pos = $(this).scrollTop();
@@ -78,16 +80,16 @@
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a onclick="scrollToPos(1)" id="brand-large-screen"  class="pull-right hidden-xs kolam-link">KOLAM</a>
+                        <a onclick="scrollToPos(1)" id="brand-large-screen"  class="pull-right hidden-xs kolam-link" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">KOLAM</a>
                     </li>
                     <li class="right-list-element map-link">
-                        <a onclick="scrollToPos(4)" >Map</a>
+                        <a onclick="scrollToPos(4)" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Map</a>
                     </li>
                     <li class="right-list-element contact-link">
-                        <a onclick="scrollToPos(3)" >Contact</a>
+                        <a onclick="scrollToPos(3)" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Contact</a>
                     </li>
                     <li class="right-list-element menu-link">
-                        <a onclick="scrollToPos(2)" >Menu</a>
+                        <a onclick="scrollToPos(2)" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu</a>
                     </li>
                     
                     <!--<li class="dropdown right-list-element">
