@@ -4,6 +4,16 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face {
+    font-family: Plato;
+    src: url('PlatoMedium.ttf');
+}
+
+html *{
+ font-family: Plato !important;   
+    font-weight:bold;
+}
+
 body {
     font-family: Papyrus, sans-serif;./*'Playfair Display SC', serif;*/
     background: #e1ac39;
