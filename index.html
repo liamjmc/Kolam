@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <script language="javascript" type="text/javascript">
         
 		function scrollToPos(x) {
@@ -54,7 +55,7 @@ $(".navbar-nav a").click(function() {
 
 </head>
 
-<body>
+<body id="body">
 
     <div class="brand">KOLAM</div>
     <div class="address-bar">The best in South Indian food. Eat in or collection.<br> 60 Upper Tooting Rd | London SW17 7PB| (020) 8672 8553.</div>
@@ -80,19 +81,19 @@ $(".navbar-nav a").click(function() {
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#myCarousel" id="brand-large-screen"  class="pull-right hidden-xs kolam-link" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">KOLAM</a>
+                        <a href="#body" id="brand-large-screen" class="pull-right hidden-xs kolam-link">KOLAM</a>
                     </li>
                     <li class="right-list-element map-link">
-                        <a href="#map" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Map</a>
+                        <a href="#map">Map</a>
                     </li>
                     <li class="right-list-element">
-                        <a href="#about" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="right-list-element contact-link">
-                        <a href="#contact" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <li class="right-list-element menu-link">
-                        <a href="#menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"    >Menu</a>
+                        <a href="#menu">Menu</a>
                     </li>
                     
                     <!--<li class="dropdown right-list-element">
@@ -213,15 +214,15 @@ $(".navbar-nav a").click(function() {
                         <strong>Menu</strong>
                     </h2>
                     <hr>
-                    <div class="panel panel-default">
-                       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    <div class="">
+                       
                         <div class="panel-heading">
                             <h4 class="panel-title text-center">
                                 Bhajjis
                             </h4>
                         </div>
-                        </a>
-                        <div id="collapseOne" class="panel-collapse collapse">
+                        
+                        <div id="collapseOne" >
                             <div class="panel-body">
                                 <p>A typical snack originating from Tanjore cooked to welcome guests. Its made from a choice of vegetables, fried in spicy gram flour batter, which is served with a chutney made from tomato or cocunut. Available in:</p>
                             
@@ -260,16 +261,16 @@ $(".navbar-nav a").click(function() {
                 <div class="clearfix"></div>
                 
                                 <div class="col-lg-12">
-                                <div class="panel panel-default">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <div class="">
+                                
                         <div class="panel-heading">
                             <h4 class="panel-title text-center">
                                 Vadai
                             </h4>
                         </div>
-                        </a>
                         
-                        <div id="collapseTwo" class="panel-collapse collapse">
+                        
+                        <div id="collapseTwo" >
                             <div class="panel-body">
                                 <p>'Vadai' is an afternoon snack that is usually served on special occasions with South Indian curry dished. They are crispy spiced doughnuts made from blackgram flour, ginger, onions and curry leaves deep fried. Served with coconut or tomato chutney.</p>
                             
@@ -346,17 +347,17 @@ $(".navbar-nav a").click(function() {
                 <div class="clearfix"></div>
                 
                                                 <div class="col-lg-12">
-                                                <div class="panel panel-default">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                        <div class="panel-heading">
+                                                <div class="">
+                                                
+                        <div class="">
                             <h4 class="panel-title text-center">
                                 Dosai
                             </h4>
                         </div>
-                        </a>
+                        
                                                 
                         
-                        <div id="collapseThree" class="panel-collapse collapse">
+                        <div id="collapseThree" class="">
                             <div class="panel-body">
                                 <p>This is a favourite South Indian starter dish which is usually served for breakfast or lunch in Tanjore, South India. It's a rice flour pancake served with chutney and a spicy lentil curry called 'Sambhar' </p>
                             
@@ -422,17 +423,17 @@ $(".navbar-nav a").click(function() {
                     <div class="clearfix"></div>
                 
                                                 <div class="col-lg-12" style="margin-bottom:40px;">
-                                                <div class="panel panel-default">
+                                                <div class="">
                                                 
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                
                         <div class="panel-heading">
                             <h4 class="panel-title text-center">
                                 Uthappam
                             </h4>
                         </div>
-                        </a>
                         
-                        <div id="collapseFour" class="panel-collapse collapse">
+                        
+                        <div id="collapseFour" class="">
                             <div class="panel-body">
                                 <p>A pizza style pancake made with rice flour similar to a Dosai, covered with a choice of vegetable toppings, served with Sambhar and and chutney.</p>
                             
@@ -498,7 +499,7 @@ $(".navbar-nav a").click(function() {
             <div class="box">
                             </div>
 
-<div class="col-md-6 contact-margin">
+<div class="col-md-12 contact-margin">
                 
                 <form name="sentMessage" id="contactForm" action="//forms.brace.io/kolamtooting@gmail.com" novalidate>
                     <div class="control-group form-group col-lg-4">
@@ -536,7 +537,7 @@ $(".navbar-nav a").click(function() {
                 
 
                 </div>
-                               <div class="col-md-6 contact-margin">
+                               <!--<div class="col-md-6 contact-margin">
                 <div id="TA_selfserveprop185" class="TA_selfserveprop">
 <ul id="ndeq5NszXW" class="TA_links qRN8t7s">
 <li id="ea7vTZDw" class="ZDnhVk5B">
@@ -546,11 +547,11 @@ $(".navbar-nav a").click(function() {
 </div>
 <script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=185&amp;locationId=2108741&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=false&amp;langversion=2"></script>
 
-<div class="col-lg-12">
+<div class="col-lg-12">-->
                     <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
                     
-                </div>
-</div>
+                <!--</div>
+</div>-->
                 
         </div>
 
