@@ -64,9 +64,9 @@ $(".navbar-nav a").click(function() {
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-              <a href="tel:02086728553">
+              <!--<a href="tel:02086728553">
                <button class="glyphicon glyphicon-phone-alt phone-icon" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" ></button>
-               </a>
+               </a>-->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -80,16 +80,19 @@ $(".navbar-nav a").click(function() {
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a onclick="scrollToPos(1)" id="brand-large-screen"  class="pull-right hidden-xs kolam-link" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">KOLAM</a>
+                        <a href="#myCarousel" id="brand-large-screen"  class="pull-right hidden-xs kolam-link" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">KOLAM</a>
                     </li>
                     <li class="right-list-element map-link">
-                        <a onclick="scrollToPos(4)" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Map</a>
+                        <a href="#map" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Map</a>
+                    </li>
+                    <li class="right-list-element">
+                        <a href="#about" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">About</a>
                     </li>
                     <li class="right-list-element contact-link">
-                        <a onclick="scrollToPos(3)" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Contact</a>
+                        <a href="#contact" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Contact</a>
                     </li>
                     <li class="right-list-element menu-link">
-                        <a onclick="scrollToPos(2)" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"    >Menu</a>
+                        <a href="#menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"    >Menu</a>
                     </li>
                     
                     <!--<li class="dropdown right-list-element">
@@ -166,7 +169,7 @@ $(".navbar-nav a").click(function() {
     </header>
     
     <!---- ABOUT ---->
-    <div class="container about-container">
+    <div id="about" class="container about-container">
 
         <div class="row about-row">
             <div class="box">
@@ -198,7 +201,7 @@ $(".navbar-nav a").click(function() {
     
     
     <!------ MENU ------>
-        <div class="container menu-container">
+        <div id="menu" class="container menu-container">
         <div class="row">
       
                <div class="box">
@@ -485,7 +488,7 @@ $(".navbar-nav a").click(function() {
     </div>
     <!------ CONTACT ------>
     
-     <div class="container contact-container">
+     <div id="contact" class="container contact-container">
 <hr>
                     <h2 class="intro-text text-center">
                         <strong>Contact</strong>Us
@@ -495,7 +498,7 @@ $(".navbar-nav a").click(function() {
             <div class="box">
                             </div>
 
-<div class="col-md-12">
+<div class="col-md-6 contact-margin">
                 
                 <form name="sentMessage" id="contactForm" action="//forms.brace.io/kolamtooting@gmail.com" novalidate>
                     <div class="control-group form-group col-lg-4">
@@ -517,7 +520,7 @@ $(".navbar-nav a").click(function() {
                             <input type="email" class="form-control" id="email" name="_replyto" required data-validation-required-message="Please enter your email address.">
                         </div>
                     </div>
-                    <div class="control-group form-group col-lg-12">
+                    <div class="control-group form-group col-lg-4">
                         <div class="controls">
                             <label>Message:</label>
                             <textarea rows="10" cols="100" class="form-control" id="message" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
@@ -526,14 +529,14 @@ $(".navbar-nav a").click(function() {
                     <div id="success"></div>
                     <!-- For success/fail messages -->
                     <div class="col-lg-12">
-                        <button type="submit" class="btn btn-primary" > <!--value="Send"-->Send Message</button>
+                        <button type="submit" class="btn btn-primary" alert="Thank you for your enquiry!"> <!--value="Send"-->Send Message</button>
                     </div>
                     
                 </form>
                 
 
                 </div>
-                               <div class="col-md-12 contact-margin">
+                               <div class="col-md-6 contact-margin">
                 <div id="TA_selfserveprop185" class="TA_selfserveprop">
 <ul id="ndeq5NszXW" class="TA_links qRN8t7s">
 <li id="ea7vTZDw" class="ZDnhVk5B">
@@ -555,7 +558,7 @@ $(".navbar-nav a").click(function() {
     
     <!------ MAP ------>
     
-    <div class="overlay" onClick="style.pointerEvents='none'"></div>
+    <div id="map" class="overlay" onClick="style.pointerEvents='none'"></div>
     <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed&z=16&amp;daddr=Kolam,+60+Upper+Tooting+Rd,+London+SW17+7PB"></iframe>
     
     
@@ -611,12 +614,19 @@ $(".navbar-nav a").click(function() {
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/jquery.localScroll.js"></script>   
+    <script src="js/jquery.scrollTo.js"></script>
+
 
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    $(document).ready(function() {
+   $('.nav li').localScroll({duration:800});
+});
     </script>
 
 </body>
