@@ -258,6 +258,10 @@ footer {
    
 }
 
+#contactForm input, #contactForm textarea{
+    color:#000 !important;   
+}
+
 #contactForm{
  margin-top:25px;   
 }
